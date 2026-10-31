@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navegacion from './layout/Navegacion';
 import Inicio from './pages/Inicio';
@@ -16,7 +16,7 @@ function ScrollAlTop() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollAlTop />
       <Navegacion />
       <main>
@@ -26,7 +26,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </main>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
