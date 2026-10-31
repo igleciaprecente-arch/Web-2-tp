@@ -1,0 +1,85 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 68px;
+  background: rgba(13, 13, 26, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(124, 58, 237, 0.18);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav__marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav__logo {
+  font-size: 22px;
+}
+
+.nav__nombre {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f1f5f9;
+  letter-spacing: -0.3px;
+}
+
+.nav__enlaces {
+  display: flex;
+  gap: 4px;
+}
+
+.nav__link {
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s, background 0.2s;
+  position: relative;
+}
+
+.nav__link:hover {
+  color: #f1f5f9;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.nav__link--activo {
+  color: #c4b5fd;
+  background: rgba(167, 139, 250, 0.15);
+  font-weight: 600;
+}
+
+.nav__link--activo::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 18px;
+  right: 18px;
+  height: 2px;
+  border-radius: 99px;
+  background: #a78bfa;
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 0 16px;
+  }
+  .nav__nombre {
+    font-size: 16px;
+  }
+  .nav__link {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  .nav__link--activo::after {
+    left: 12px;
+    right: 12px;
+  }
+}

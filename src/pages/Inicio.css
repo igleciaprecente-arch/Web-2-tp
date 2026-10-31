@@ -1,0 +1,141 @@
+.inicio {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-bottom: 80px;
+}
+
+/* ── Hero ── */
+.inicio__hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 24px 60px;
+  gap: 18px;
+  background: #13131f;
+  border-bottom: 1px solid #2a2a45;
+}
+
+.inicio__hero-titulo {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 700;
+  color: #e2e8f0;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.inicio__hero-titulo span {
+  color: #a78bfa;
+}
+
+.inicio__hero-subtitulo {
+  font-size: 15px;
+  color: #94a3b8;
+  max-width: 480px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.inicio__hero-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #7c3aed;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  margin-top: 4px;
+}
+
+.inicio__hero-btn:hover {
+  background: #6d28d9;
+}
+
+/* ── Características ── */
+.inicio__caracteristicas {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inicio__seccion-titulo {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin: 0 0 32px;
+}
+
+.inicio__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.inicio__card {
+  background: #1e1e2e;
+  border: 1px solid #2a2a45;
+  border-radius: 10px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inicio__card-icono {
+  width: 48px;
+  height: 48px;
+  background: rgba(156, 163, 175, 0.08);
+  border: 1px solid rgba(156, 163, 175, 0.12);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.inicio__card-titulo {
+  font-size: 15px;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.inicio__card-descripcion {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ── CTA ── */
+.inicio__cta {
+  text-align: center;
+  padding: 50px 24px;
+  background: #13131f;
+  border-top: 1px solid #2a2a45;
+  border-bottom: 1px solid #2a2a45;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.inicio__cta h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+.inicio__cta p {
+  color: #94a3b8;
+  font-size: 14px;
+  margin: 0;
+}
