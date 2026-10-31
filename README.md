@@ -3,6 +3,8 @@
 Trabajo Práctico — Desarrollo Web 2  
 Tienda online construida con React + Vite que consume APIs externas.
 
+🌐 **Demo en vivo:** [https://igleciaprecente-arch.github.io/Web-2-tp/](https://igleciaprecente-arch.github.io/Web-2-tp/)
+
 ---
 
 ## Tecnologías utilizadas
