@@ -31,7 +31,7 @@ const IconoHorario = () => (
 const infoItems = [
   { Icono: IconoEmail,     titulo: 'Email',     texto: 'contacto@mitienda.com' },
   { Icono: IconoTelefono,  titulo: 'Teléfono',  texto: '+54 9 3874 73-6030' },
-  { Icono: IconoDireccion, titulo: 'Dirección', texto: 'Av. Corrientes 1234, Buenos Aires' },
+  { Icono: IconoDireccion, titulo: 'Dirección', texto: 'Av. Borelli, A4400 Salta' },
   { Icono: IconoHorario,   titulo: 'Horario',   texto: 'Lunes a viernes, 9:00 – 18:00' },
 ];
 
@@ -39,7 +39,7 @@ const ENDPOINT = 'https://formspree.io/f/mjyyawpl';
 
 function Contacto() {
   const [formulario, setFormulario] = useState({ nombre: '', email: '', mensaje: '' });
-  const [estado, setEstado] = useState('idle'); // 'idle' | 'enviando' | 'ok' | 'error'
+  const [estado, setEstado] = useState('idle');
 
   const manejarCambio = (e) => {
     setFormulario({ ...formulario, [e.target.name]: e.target.value });
@@ -162,6 +162,23 @@ function Contacto() {
 
         </form>
       </div>
+
+      <div className="contacto__mapa">
+        <h2 className="contacto__mapa-titulo">Ubicación</h2>
+        <div className="contacto__mapa-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d14045.17403975263!2d-58.76865664096516!3d-34.58271902301878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1ses!2sar!4v1793489006545!5m2!1ses!2sar"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
+            title="Ubicación en el mapa"
+          />
+        </div>
+      </div>
+
     </div>
   );
 }
